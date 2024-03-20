@@ -1,3 +1,3 @@
 # 240005-alberto-henrique-miranda-de-jesus
 
-Branch principal do modulo avançado de dotnet
+Branch responsavel pelo desenvolvimento dos exercicios propostos na aula 3
