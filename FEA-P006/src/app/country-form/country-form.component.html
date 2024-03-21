@@ -1,0 +1,10 @@
+<form class="form-container">
+    <div *ngFor="let campo of camposDoForm">
+      <mat-form-field appearance="fill">
+        <mat-label>{{ campo.rotulo }}</mat-label>
+        <input matInput type="{{ campo.type }}" name="{{ campo.nome }}" />
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Enviar</button>
+  </form>
+  
