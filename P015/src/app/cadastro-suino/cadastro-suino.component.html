@@ -1,0 +1,48 @@
+<div class="containerCadastro">
+  <div class="formCadastro">
+    <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+        <div class="group">
+            <div class="form-group">
+                <label for="brincoAnimal">Brinco do animal</label>
+                <input formControlName="brincoAnimal" placeholder="Brinco do animal" class="form-control" id="brincoAnimal">
+            </div>
+            <div class="form-group">
+                <label for="brincoPai">Brinco do pai</label>
+                <input formControlName="brincoPai" placeholder="Brinco do pai" class="form-control" id="brincoPai">
+            </div>
+            <div class="form-group">
+                <label for="brincoMae">Brinco da mãe</label>
+                <input formControlName="brincoMae" placeholder="Brinco da mãe" class="form-control" id="brincoMae">
+            </div>
+        </div>
+        <div class="group">
+
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" formControlName="dataNascimento" placeholder="Data de Nascimento" class="form-control" id="dataNascimento">
+            </div>
+            <div class="form-group">
+                <label for="dataSaida">Data da saída</label>
+                <input type="date" formControlName="dataSaida" placeholder="Data da saída" class="form-control" id="dataSaida">
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select formControlName="status" class="form-control" id="status">
+                    <option value="Ativo">Ativo</option>
+                    <option value="Vendido">Vendido</option>
+                    <option value="Morto">Morto</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo</label>
+                <select formControlName="sexo" class="form-control" id="sexo">
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirmar</button>
+    </form>
+  </div>
+</div>

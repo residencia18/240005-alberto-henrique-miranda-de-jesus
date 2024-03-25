@@ -1,0 +1,96 @@
+form .form-group input.ng-invalid.ng-touched {
+    border-color: red;
+  }
+form .form-group input.ng-valid.ng-touched {
+    border-color:  rgb(43, 189, 43);
+  }
+ form .form-group input.ng-valid.ng-touched + label{
+    color: green;
+  }
+  
+.containerCadastro{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.containerCadastro .formCadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.containerCadastro .formCadastro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form .form-group label{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-family: "Bebas Neue", sans-serif;
+
+}
+form .form-group small{
+    font-size: 0.8rem;
+    color: red;
+    font-style: italic;
+}
+form .form-group input, select{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    background: transparent;
+    
+
+}
+
+form .form-group input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+form button{
+    padding: 0.5rem;
+    background: var(--tertiary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+.formCadastro form button:hover{
+    background: var(--tertiary-color);
+}
+
+.formCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.containerCadastro .group{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+.form-group select{
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    
+
+}
